@@ -1,0 +1,33 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*body*/
+
+body {
+    font-family: 'IM Fell English SC', serif;
+    width: 100vw;
+    overflow-x: hidden;
+	background-color:black;
+}
+
+
+/*css de base*/
+
+.colone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

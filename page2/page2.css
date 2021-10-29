@@ -1,0 +1,75 @@
+/*Page boutique*/
+
+.page2 {
+    width: 100vw;
+    background-color: #000000;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.carte {
+    background-color: black;
+    width: 250px;
+    margin-left: 250px;
+    margin-top: 89px;
+}
+
+.presentation {
+    color: white;
+    margin-top: 8px;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.achat {
+    background-color: black;
+    border: solid 2px;
+    color: white;
+    width: 94px;
+    height: 37px;
+    border-radius: 13px;
+    margin-left: 12px;
+}
+
+.achat:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.bestiale {
+    width: 100%;
+}
+
+.colossal {
+    width: 100%;
+}
+
+.feminin {
+    width: 100%;
+}
+
+.cuirasse {
+    width: 100%;
+}
+
+.assaillant {
+    width: 100%;
+}
+
+.originel {
+    width: 93%;
+}
+
+.livai {
+    width: 203px;
+    position: absolute;
+}
