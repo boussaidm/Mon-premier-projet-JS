@@ -78,23 +78,31 @@
 }
 
 .navbar__links {
-    display: none;
-    transition: all 6s ease-out;
+    transform: translateX(150%);
+    transition: all 1s ease-out;
+    background-color: black;
+    width: 25vw;
+    height: 86vh;
+   list-style-type: none; 
+   position: absolute;
+   padding: 38px;
+}
+
+.navbar__link{
+    padding: 38px;
 }
 
 .showNav .navbar__links {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+    transform: translateX(0);
+    flex-direction: column;    
     width: 25vw;
     height: 86vh;
     background-color: black;
-    z-index: 3;
-    position: absolute;
+   
 }
 
 .showNav .navbar__link {
-    padding: 38px;
+    
 }
 
 .navbar__link>a {
