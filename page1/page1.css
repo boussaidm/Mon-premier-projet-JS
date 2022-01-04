@@ -3,15 +3,14 @@
 .page1 {
     background-image: url(background1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .titre {
     font-size: 8vw;
     margin-top: 28px;
+    padding-bottom: 187px;
 }
-
-
 
 #panier {
     width: 74px;
@@ -24,13 +23,14 @@
     transform: rotate(6deg);
     transition: 0.8s;
 }
-.Pnotif{
+
+.Pnotif {
     width: 0;
     height: 0;
     display: none;
 }
- 
-.notif{
+
+.notif {
     width: 15px;
     height: 14px;
     background-color: red;
@@ -49,7 +49,7 @@
 
 .afficher {
     width: 280px;
-    height: 23vh; 
+    height: 23vh;
     background-color: black;
     z-index: 1;
     position: absolute;
@@ -60,12 +60,11 @@
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-color: transparent;
-    
 }
+
 .afficher::-webkit-scrollbar {
     display: none;
-  }
-
+}
 
 
 /*burger*/
@@ -83,26 +82,23 @@
     background-color: black;
     width: 25vw;
     height: 86vh;
-   list-style-type: none; 
-   position: absolute;
-   padding: 38px;
+    list-style-type: none;
+    position: absolute;
+    padding: 38px;
 }
 
-.navbar__link{
+.navbar__link {
     padding: 38px;
 }
 
 .showNav .navbar__links {
     transform: translateX(0);
-    flex-direction: column;    
+    flex-direction: column;
     width: 25vw;
     height: 86vh;
     background-color: black;
-   
-}
-
-.showNav .navbar__link {
-    
+    display: flex;
+    z-index: 10;
 }
 
 .navbar__link>a {
@@ -123,7 +119,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 3;
+    z-index: 11;
     margin-right: 22px;
 }
 
@@ -166,65 +162,4 @@
 .showNav .bar::after {
     transform: rotate(-45deg);
     transition: 0.7s;
-}
-
-
-/*carousel*/
-
-.container {
-    max-width: 560px;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.slider iframe {
-    display: none;
-    animation: fade 0.8s;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.barBouton {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.bouton {
-    font-size: 50px;
-    margin: 0 15px;
-    cursor: pointer;
-    top: -184px;
-    position: absolute;
-    width: 62px;
-    height: 62px;
-}
-
-.bouton:hover {
-    background-color: rgba(255, 255, 255, 0.22);
-}
-
-.droit {
-    left: 383px;
-}
-
-.gauche {
-    left: -15px;
-    transform: rotate(180deg);
-}
-
-
-/*Quand la balise possede la class active !! (car pas d'espace*/
-
-iframe.active {
-    max-width: 100%;
-    display: block;
 }
