@@ -14,7 +14,7 @@ function tourne() {
     document.getElementById('message').innerHTML = ""
     roulette.style.transform = "rotate(" + number + "deg)";
     console.log(roulette.style)
-    number += Math.ceil(Math.random() * 1000);
+    number += Math.ceil(Math.random() * 900);
     //je veux qu'à chaque fois que la roue s'arrete la recompense s'affiche.
     setTimeout(function prix() {
         var rand = Math.floor(Math.random() * promo.length);
